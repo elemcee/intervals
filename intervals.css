@@ -1,0 +1,131 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 3%;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    position: relative;
+    padding: 5px 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    width: 7%;
+    text-align: center !important;
+    padding: 3px;
+}
+
+tr td:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    z-index: -100;
+}
+
+@media (max-width: 960px) {
+    nav .container {
+        padding: 10px;
+    }
+}
+
+#hiders .navbar-item {
+    color: #4a4a4a !important;
+}
+
+.button.is-focused,
+.button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.button.is-focused:not(:active),
+.button:focus:not(:active) {
+    box-shadow: 0 0 0 1px rgba(204, 204, 204, 1)
+}
+
+.root,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    width: 1.5em;
+}
+
+.root {
+    background: #ff3860;
+    padding-left: 2px;
+
+}
+
+.two {
+    background: #f96854;
+    padding-left: 2px;
+}
+
+.three {
+    background: #ffdd57;
+}
+
+.four {
+    background: #48c774;
+}
+
+.five {
+    background: #3273dc;
+}
+
+.six {
+    background: #6f5499;
+    padding-right: 2px;
+}
+
+.seven {
+    background: #4a4a4a;
+    padding-top: 2px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.hidden {
+    background-color: #ccc;
+}

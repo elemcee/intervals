@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defersrc="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="intervals.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="intervals.css">
+    <title>Intervals</title>
+</head>
+
+<body>
+    <section class="section">
+
+        <nav class="navbar is-fixed-top has-shadow is-spaced is-dark">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1 class="navbar-item">Intervals</h1>
+                </div>
+                <div id="hiders" class="buttons is-grouped navbar-end">
+                    <input type="button" class="button navbar-item" id="button2" value='Hide Twos'
+                        onclick="hideTwos();" />
+                    <input type="button" class="button navbar-item" id="button3" value='Hide Threes'
+                        onclick="hideThrees();" />
+                    <input type="button" class="button navbar-item" id="button4" value='Hide Fours'
+                        onclick="hideFours();" />
+                    <input type="button" class="button navbar-item" id="button5" value='Hide Fives'
+                        onclick="hideFives();" />
+                    <input type="button" class="button navbar-item" id="button6" value='Hide Sixes'
+                        onclick="hideSixes();" />
+                    <input type="button" class="button navbar-item" id="button7" value='Hide Sevens'
+                        onclick="hideSevens();" />
+                </div>
+        </nav>
+        </div>
+        <div class="container is-max-desktop">
+            <h2>Major</h2>
+            <table>
+                <tr>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                </tr>
+                <tr>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</td>
+                    <td></td>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                </tr>
+                <tr>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td><span class="seven">7</span></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td><span class="four">4</span></td>
+                </tr>
+            </table>
+
+            <h2>Major Pentatonic</h2>
+            <table>
+                <tr>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                </tr>
+                <tr>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td><span class="six">6</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h2>Dominant 7 Arpeggio</h2>
+            <table>
+                <tr>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                </tr>
+                <tr>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                </tr>
+                <tr>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">3</span></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h2>Minor</h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                </tr>
+                <tr>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                </tr>
+                <tr>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td><span class="six">b6</span></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td><span class="two">2</span></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                </tr>
+            </table>
+
+            <h2>Minor Pentatonic</h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                </tr>
+                <tr>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                    <td></td>
+                    <td><span class="five">5</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="seven">b7</span></td>
+                    <td></td>
+                    <td><span class="root">1</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="three">b3</span></td>
+                    <td></td>
+                    <td><span class="four">4</span></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
